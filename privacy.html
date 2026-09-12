@@ -19,17 +19,18 @@
   <main>
     <article>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective: 12 September 2026 · Applies to the WordAce iOS app and API operated by Velora Tech.</p>
+      <p class="meta">Effective: 13 September 2026 · Applies to the WordAce iOS app and API operated by Velora Tech.</p>
 
       <p>WordAce is a word game you play with friends. We collect only what we need to run matches, rankings, purchases, and support. The app has no ads and does not sell personal data.</p>
 
       <h2>1. Data we collect</h2>
       <ul>
-        <li><strong>Account</strong> — display name, username, authentication identifiers (for example Sign in with Apple), preferred language.</li>
+        <li><strong>Account</strong> — display name, username, authentication identifiers (for example Sign in with Apple, including Hide My Email), preferred language, optional country.</li>
         <li><strong>Gameplay</strong> — match state, moves, ratings, friends, and chat messages you send after unlocking chat.</li>
-        <li><strong>Commerce</strong> — coin balance, cosmetic unlocks, StoreKit transaction identifiers (no full card numbers).</li>
+        <li><strong>Support</strong> — feedback notes you send from Profile.</li>
+        <li><strong>Commerce</strong> — coin balance, cosmetic unlocks, StoreKit / RevenueCat transaction identifiers (no full card numbers).</li>
         <li><strong>Device / push</strong> — push token and notification preferences so we can alert you when it is your turn.</li>
-        <li><strong>Diagnostics</strong> — basic server logs (IP, timestamps, error codes) for security and abuse prevention.</li>
+        <li><strong>Diagnostics</strong> — server logs (IP, timestamps, error codes) and crash / usage events via Firebase Crashlytics and Firebase Analytics.</li>
       </ul>
 
       <h2>2. How we use data</h2>
@@ -39,24 +40,31 @@
         <li>Process coin and cosmetic purchases and restore entitlements.</li>
         <li>Prevent cheating, spam, and unauthorized access.</li>
         <li>Respond to support and account-deletion requests.</li>
+        <li>Find and fix crashes (Firebase Crashlytics) and understand which screens are used (Firebase Analytics). We do not use this for advertising.</li>
       </ul>
 
       <h2>3. Sharing</h2>
-      <p>We do not sell personal data. We share data only with processors needed to run the service (hosting, push delivery, Apple for Sign in with Apple / In-App Purchase) and when required by law.</p>
+      <p>We do not sell personal data. We share data only with processors needed to run the service:</p>
+      <ul>
+        <li><strong>Railway</strong> — app API and database hosting.</li>
+        <li><strong>Apple</strong> — Sign in with Apple, In-App Purchase, and push (APNs).</li>
+        <li><strong>RevenueCat</strong> — purchase verification and subscription status.</li>
+        <li><strong>Google Firebase</strong> — Analytics and Crashlytics.</li>
+      </ul>
+      <p>We also share data when required by law.</p>
 
       <h2>4. Retention</h2>
-      <p>Account and match history are kept while your account is active. After a verified deletion request we delete or anonymize personal data within 30 days, except records we must keep for fraud, accounting, or legal reasons.</p>
+      <p>Account and match history are kept while your account is active. In-app account deletion removes your profile and personal data immediately. Purchase audit rows may remain without your profile for fraud and accounting. Some security logs may remain where legally required.</p>
 
       <h2>5. Your choices</h2>
       <ul>
-        <li>Turn off push in iOS Settings or in-app notification toggles.</li>
-        <li>Disable in-game chat in Settings (you will not open new chat unlocks).</li>
+        <li>Turn off game or chat <em>notifications</em> in Profile, or disable notifications in iOS Settings → WordAce. That does not delete existing chat threads.</li>
         <li>Request account deletion in the app or via <a href="account-deletion.html">account deletion</a>.</li>
         <li>Contact <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a> for access or correction questions.</li>
       </ul>
 
       <h2>6. Children</h2>
-      <p>WordAce is not directed at children under 13. If you believe a child provided data, contact us and we will delete it.</p>
+      <p>WordAce is not directed at children under 13. Chat is user-generated. If you believe a child provided data, contact us and we will delete it.</p>
 
       <h2>7. Contact</h2>
       <p>Velora Tech · <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a> · See also <a href="support.html">Support</a>.</p>
